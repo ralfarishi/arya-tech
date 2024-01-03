@@ -555,13 +555,14 @@ section {
 	}
 }
 
-@media (max-width: 535px) {
+@media (max-width: 575px) {
 	.hero .title {
 		width: 350px;
+		margin-left: 20px;
 	}
 
 	.hero .title h1 {
-		font-size: 40px;
+		font-size: 45px;
 	}
 
 	.hero .btn-get-started {

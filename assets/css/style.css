@@ -426,6 +426,7 @@ section {
 	transition: 0.5s;
 	color: black;
 	background: #baf246;
+	z-index: 999;
 }
 
 .hero .btn-get-started span {
@@ -637,12 +638,26 @@ section {
 
 .about p {
 	margin: 15px 0 30px 0;
-	line-height: 24px;
+	line-height: 1.2em;
 	font-size: 30px;
 }
 
 .about .content span img {
 	width: 50px;
+}
+
+#more {
+	transition: opacity 0.5s ease;
+	opacity: 0;
+	display: none;
+	height: 0;
+	overflow: hidden;
+}
+
+#more.show {
+	display: inline;
+	height: auto;
+	opacity: 1;
 }
 
 @media (max-width: 992px) {
@@ -1017,7 +1032,6 @@ section {
 	border-radius: 0;
 	box-shadow: none;
 	font-size: 14px;
-	border-radius: 0;
 }
 
 .contact .php-email-form input:focus,
@@ -1189,6 +1203,14 @@ section {
 .footer .copyright .left-content {
 	display: flex;
 	align-items: center;
+}
+
+.copyright .left-content .company-location:hover {
+	color: #baf246;
+}
+
+.copyright .left-content a i:hover {
+	color: #94d119;
 }
 
 .footer .copyright .left-content span {

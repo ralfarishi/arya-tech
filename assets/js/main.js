@@ -176,4 +176,26 @@
 	window.addEventListener("load", () => {
 		aos_init();
 	});
+
+	on("click", "#btn-read-more", function (e) {
+		const dots = document.getElementById("dots");
+		const moreText = document.getElementById("more");
+		const btnText = document.getElementById("btn-read-more");
+
+		if (dots.style.display === "none") {
+			btnText.innerHTML = "Read More";
+			moreText.classList.remove("show");
+			setTimeout(function () {
+				dots.style.display = "inline";
+				moreText.style.display = "none";
+			}, 350);
+		} else {
+			dots.style.display = "none";
+			btnText.innerHTML = "Read Less";
+			moreText.style.display = "inline";
+			setTimeout(function () {
+				moreText.classList.add("show");
+			}, 350);
+		}
+	});
 })();

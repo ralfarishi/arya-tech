@@ -417,16 +417,14 @@ section {
 }
 
 .hero .btn-get-started {
-	position: absolute;
-	top: 55%;
-	left: 43%;
+	position: relative;
+	top: 4em;
 	line-height: 0;
 	padding: 15px 40px;
 	border-radius: 28px;
 	transition: 0.5s;
 	color: black;
 	background: #baf246;
-	z-index: 999;
 }
 
 .hero .btn-get-started span {
@@ -452,9 +450,8 @@ section {
 }
 
 .hero .go-down {
-	position: absolute;
-	top: 75%;
-	left: 49%;
+	position: relative;
+	top: 10em;
 	animation: bounce 2s ease infinite;
 	z-index: 999;
 }
@@ -510,10 +507,6 @@ section {
 	.hero .hero-img img {
 		width: 80%;
 	}
-
-	.hero .btn-get-started {
-		left: 40%;
-	}
 }
 
 @media (max-width: 768px) {
@@ -544,11 +537,11 @@ section {
 	}
 
 	.hero .btn-get-started {
-		margin-top: 5px;
+		left: 0.3em;
 	}
 
 	.hero .go-down {
-		margin-left: 1em;
+		top: 7em;
 	}
 
 	.curve img {
@@ -559,25 +552,16 @@ section {
 @media (max-width: 575px) {
 	.hero .title {
 		width: 350px;
-		margin-left: 20px;
 	}
 
 	.hero .title h1 {
 		font-size: 45px;
 	}
-
-	.hero .btn-get-started {
-		margin-left: -20px;
-	}
 }
 
 @media (max-width: 448px) {
 	.hero .title {
-		margin-left: -25px;
-	}
-
-	.hero .btn-get-started {
-		margin-left: -35px;
+		left: auto;
 	}
 }
 
@@ -586,16 +570,8 @@ section {
 		height: 80vh;
 	}
 
-	.hero .title {
-		margin-left: -4em;
-	}
-
 	.hero .btn-get-started {
-		margin-left: -3.5em;
-	}
-
-	.hero .go-down {
-		margin-left: 5px;
+		top: 2em;
 	}
 
 	.curve img {
@@ -680,7 +656,9 @@ section {
 @media (max-width: 448px) {
 	.about p {
 		line-height: 33px;
-		font-size: 25px;
+		font-size: 18px;
+		text-align: justify;
+		hyphens: auto;
 	}
 
 	.about .content span img {
